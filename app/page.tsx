@@ -67,7 +67,7 @@ export default function DermatologiaLP() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight">Sua Pele Merece Cuidado Especializado!</h1>
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight">Dermatologista em Feira de Santana: Sua Pele Merece Cuidado Especializado!</h1>
               <p className="text-xl text-green-100">
                 Na Atend Já, você encontra consultas dermatológicas acessíveis, tratamentos estéticos e exames para
                 câncer de pele – sem plano de saúde e com agendamento rápido.
