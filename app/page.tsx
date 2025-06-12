@@ -22,6 +22,7 @@ import {
   Calendar,
 } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function DermatologiaLP() {
   return (
@@ -53,7 +54,7 @@ export default function DermatologiaLP() {
 
       {/* Hero Section */}
       <section
-        className="text-white py-16 md:py-24 relative overflow-hidden"
+        className="text-white py-16 md:py-14 relative overflow-hidden"
         style={{
           background: `linear-gradient(135deg, #008B47 0%, #2EA55C 50%, #8dbf44 100%)`,
         }}
@@ -65,27 +66,27 @@ export default function DermatologiaLP() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-white/20 text-white border-white/30 backdrop-blur-sm">
-                ⚡ Atendimento Especializado
-              </Badge>
+              
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">Sua Pele Merece Cuidado Especializado!</h1>
               <p className="text-xl text-green-100">
                 Na Atend Já, você encontra consultas dermatológicas acessíveis, tratamentos estéticos e exames para
                 câncer de pele – sem plano de saúde e com agendamento rápido.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-white font-semibold shadow-lg hover:bg-green-50"
-                  style={{ color: "#008B47" }}
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  AGENDAR CONSULTA
-                </Button>
+                <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="bg-white font-bold shadow-lg hover:bg-green-50"
+                    style={{ color: "#008B47" }}
+                  >
+                    <Calendar className="w-5 h-5 mr-2" />
+                    AGENDAR CONSULTA
+                  </Button>
+                </Link>
             
               </div>
             </div>
-            <div className="relative">
+            <div className="relative justify-self-end">
               <Image
                 src="/medicobanner.png?height=500&width=500"
                 alt="Dermatologista examinando pele com equipamento especializado"
@@ -93,15 +94,7 @@ export default function DermatologiaLP() {
                 height={500}
                 className="rounded-3xl"
               />
-              <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex items-center space-x-2">
-                  <Shield className="w-6 h-6" style={{ color: "#2EA55C" }} />
-                  <div>
-                    <p className="font-semibold text-gray-800">100% Satisfação</p>
-                    <p className="text-sm text-gray-600">em tratamentos</p>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -119,7 +112,7 @@ export default function DermatologiaLP() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             <Card
-              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50"
+              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50 flex flex-col justify-between h-full"
               style={{
                 borderColor: "#8dbf44",
                 background: "linear-gradient(135deg, white 0%, #8dbf4410 100%)",
@@ -133,23 +126,24 @@ export default function DermatologiaLP() {
                   <Stethoscope className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-lg">Consulta Dermatológica Completa</CardTitle>
-                <CardDescription>Avaliação de manchas, acne e doenças de pele</CardDescription>
+                <CardDescription className="min-h-[40px]">Avaliação de manchas, acne e doenças de pele</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
-               
-                <Button
-                  size="lg"
-                  className="bg-white font-semibold shadow-lg hover:bg-green-50"
-                  style={{ color: "#008B47" }}
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  AGENDAR CONSULTA
-                </Button>
+                <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="bg-white font-bold shadow-lg hover:bg-green-50"
+                    style={{ color: "#008B47" }}
+                  >
+                    <Calendar className="w-5 h-5 mr-2" />
+                    AGENDAR CONSULTA
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
             <Card
-              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50"
+              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50 flex flex-col justify-between h-full"
               style={{
                 borderColor: "#8dbf44",
                 background: "linear-gradient(135deg, white 0%, #8dbf4410 100%)",
@@ -160,26 +154,27 @@ export default function DermatologiaLP() {
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md"
                   style={{ background: "linear-gradient(135deg, #8dbf44, #2EA55C)" }}
                 >
-                  <Shield className="w-8 h-8" style={{ color: "#008B47" }} />
+                  <Shield className="w-8 h-8 text-white"/>
                 </div>
                 <CardTitle className="text-lg">Exame de Dermatoscopia</CardTitle>
-                <CardDescription>Detecção precoce de câncer de pele</CardDescription>
+                <CardDescription className="min-h-[40px]">Detecção precoce de câncer de pele</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
-                
-                <Button
-                  size="lg"
-                  className="bg-white font-semibold shadow-lg hover:bg-green-50"
-                  style={{ color: "#008B47" }}
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  AGENDAR CONSULTA
-                </Button>
+                <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="bg-white font-bold shadow-lg hover:bg-green-50"
+                    style={{ color: "#008B47" }}
+                  >
+                    <Calendar className="w-5 h-5 mr-2" />
+                    AGENDAR CONSULTA
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
             <Card
-              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50"
+              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50 flex flex-col justify-between h-full"
               style={{
                 borderColor: "#8dbf44",
                 background: "linear-gradient(135deg, white 0%, #8dbf4410 100%)",
@@ -190,26 +185,27 @@ export default function DermatologiaLP() {
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md"
                   style={{ background: "linear-gradient(135deg, #8dbf44, #2EA55C)" }}
                 >
-                  <Zap className="w-8 h-8" style={{ color: "#008B47" }} />
+                  <Zap className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-lg">Limpeza de Pele Profissional</CardTitle>
-                <CardDescription>Tratamento para acne e cravos</CardDescription>
+                <CardDescription className="min-h-[40px]">Tratamento para acne e cravos</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
-                
-                <Button
-                  size="lg"
-                  className="bg-white font-semibold shadow-lg hover:bg-green-50"
-                  style={{ color: "#008B47" }}
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  AGENDAR CONSULTA
-                </Button>
+                <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="bg-white font-bold shadow-lg hover:bg-green-50"
+                    style={{ color: "#008B47" }}
+                  >
+                    <Calendar className="w-5 h-5 mr-2" />
+                    AGENDAR CONSULTA
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
             <Card
-              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50"
+              className="hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-50 flex flex-col justify-between h-full"
               style={{
                 borderColor: "#8dbf44",
                 background: "linear-gradient(135deg, white 0%, #8dbf4410 100%)",
@@ -220,21 +216,22 @@ export default function DermatologiaLP() {
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md"
                   style={{ background: "linear-gradient(135deg, #8dbf44, #2EA55C)" }}
                 >
-                  <CheckCircle className="w-8 h-8" style={{ color: "#008B47" }} />
+                  <CheckCircle className="w-8 h-8 text-white"  />
                 </div>
                 <CardTitle className="text-lg">Remoção de Lesões</CardTitle>
-                <CardDescription>Verrugas, sinais e queratoses</CardDescription>
+                <CardDescription className="min-h-[40px]">Verrugas, sinais e queratoses</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
-               
-                <Button
-                  size="lg"
-                  className="bg-white font-semibold shadow-lg hover:bg-green-50"
-                  style={{ color: "#008B47" }}
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  AGENDAR CONSULTA
-                </Button>
+                <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="bg-white font-bold shadow-lg hover:bg-green-50"
+                    style={{ color: "#008B47" }}
+                  >
+                    <Calendar className="w-5 h-5 mr-2" />
+                    AGENDAR CONSULTA
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>
@@ -305,10 +302,12 @@ export default function DermatologiaLP() {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="text-white font-semibold" style={{ backgroundColor: "#008B47" }}>
-              <AlertTriangle className="w-5 h-5 mr-2" />
-              AGENDAR CONSULTA
-            </Button>
+            <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-white font-bold" style={{ backgroundColor: "#008B47" }}>
+                <AlertTriangle className="w-5 h-5 mr-2" />
+                AGENDAR CONSULTA
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -362,7 +361,7 @@ export default function DermatologiaLP() {
               <h3 className="text-xl font-semibold mb-2" style={{ color: "#3b3f3d" }}>
                 Preços Acessíveis
               </h3>
-              <p className="text-gray-600">Consulta + exame de dermatoscopia por menos de R$ 300, sem plano de saúde</p>
+              <p className="text-gray-600">Consulta com preço acessível, sem plano de saúde</p>
             </div>
 
             <div className="text-center">
@@ -479,6 +478,18 @@ export default function DermatologiaLP() {
               </CardContent>
             </Card>
           </div>
+          <div className="text-center mt-12">
+            <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="font-bold shadow-lg hover:opacity-90"
+                style={{ backgroundColor: "#2EA55C", color: "white" }}
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                AGENDAR CONSULTA
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -539,22 +550,26 @@ export default function DermatologiaLP() {
           </div>
 
           <div className="text-center mt-12">
-            <Button
-              size="lg"
-              className="text-white font-semibold hover:opacity-90"
-              style={{ backgroundColor: "#008B47" }}
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-             AGENDAR CONSULTA (75) 3026-8494
-            </Button>
+            <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                className="text-white font-semibold hover:opacity-90"
+                style={{ backgroundColor: "#008B47" }}
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                AGENDAR CONSULTA
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
 
+     
+
       {/* Footer */}
       <footer style={{ backgroundColor: "#3b3f3d" }} className="text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Image
@@ -568,12 +583,7 @@ export default function DermatologiaLP() {
               <p className="text-white/70 mb-4">
                 Cuidado dermatológico especializado com preços acessíveis. Sua pele em boas mãos.
               </p>
-              <div className="flex space-x-4">
-                <Badge className="text-white" style={{ backgroundColor: "#008B47" }}>
-                  <Shield className="w-4 h-4 mr-1" />
-                  Equipamentos Certificados SBD
-                </Badge>
-              </div>
+              
             </div>
 
             <div>
@@ -595,18 +605,6 @@ export default function DermatologiaLP() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">Serviços</h3>
-              <ul className="space-y-2 text-white/70">
-                <li>• Consulta Dermatológica</li>
-                <li>• Exame de Dermatoscopia</li>
-                <li>• Limpeza de Pele</li>
-                <li>• Remoção de Lesões</li>
-                <li>• Tratamento de Acne</li>
-                <li>• Prevenção do Câncer de Pele</li>
-              </ul>
-            </div>
-
-            <div>
               <h3 className="text-lg font-semibold mb-4">Desenvolvido por</h3>
               <div className="flex items-center">
                 <Image
@@ -622,9 +620,6 @@ export default function DermatologiaLP() {
 
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/50">
             <p>&copy; {new Date().getFullYear()} Atend Já - Todos os direitos reservados.</p>
-            <p className="mt-2 text-sm">
-              Produtos dermatológicos à venda na clínica | Atendimento personalizado para cada tipo de pele
-            </p>
           </div>
         </div>
       </footer>
