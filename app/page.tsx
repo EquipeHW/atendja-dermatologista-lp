@@ -498,56 +498,37 @@ export default function DermatologiaLP() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#3b3f3d" }}>
-              Tire Suas Dúvidas Sobre Saúde da Pele
+              Perguntas Frequentes
             </h2>
-            <p className="text-xl" style={{ color: "#3b3f3d" }}>Respostas para as perguntas mais frequentes</p>
+            <p className="text-xl text-gray-600">Respostas para as suas principais dúvidas</p>
           </div>
 
-          <div className="max-w-3xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="item-1" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left">Preciso de encaminhamento para consulta?</AccordionTrigger>
-                <AccordionContent>
-                  Não! Você pode agendar diretamente conosco, sem necessidade de encaminhamento médico ou plano de
-                  saúde. Basta ligar ou enviar mensagem no WhatsApp.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left">A remoção de sinais dói?</AccordionTrigger>
-                <AccordionContent>
-                  Usamos anestesia local para garantir seu máximo conforto durante o procedimento. A maioria dos
-                  pacientes relata apenas um leve desconforto.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left">Como preparar a pele antes da limpeza?</AccordionTrigger>
-                <AccordionContent>
-                  Evite exposição solar e esfoliação 3 dias antes do procedimento. Não use produtos com ácidos 48h
-                  antes. Nossa equipe fornecerá orientações detalhadas no agendamento.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left">
-                  Quanto tempo demora uma consulta dermatológica?
-                </AccordionTrigger>
-                <AccordionContent>
-                  Uma consulta completa dura entre 30 a 45 minutos, incluindo anamnese, exame físico e orientações.
-                  Exames complementares podem ser realizados no mesmo dia.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-5" className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left">Vocês atendem emergências dermatológicas?</AccordionTrigger>
-                <AccordionContent>
-                  Sim! Para casos urgentes como reações alérgicas severas, feridas que não cicatrizam ou mudanças
-                  súbitas em pintas, oferecemos atendimento prioritário no mesmo dia.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
+          <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-lg font-semibold" style={{ color: "#3b3f3d" }}>Como funciona o atendimento?</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700">
+                Presencial com agendamento via WhatsApp. Atendimento ágil e sem filas.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-lg font-semibold" style={{ color: "#3b3f3d" }}>Trabalha com convênios?</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700">
+                Não. Atendemos exclusivamente como clínica particular, com recibo para reembolso.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-lg font-semibold" style={{ color: "#3b3f3d" }}>Como agendo minha consulta?</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700">
+                Entre em contato pelo WhatsApp (75) 3026‑8494 ou via redes sociais.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-lg font-semibold" style={{ color: "#3b3f3d" }}>Qual o valor das consultas?</AccordionTrigger>
+              <AccordionContent className="text-base text-gray-700">
+                Consultas a partir de R$ 150 e procedimentos desde R$ 80.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
           <div className="text-center mt-12">
             <Link href="https://wa.me/557530268494" target="_blank" rel="noopener noreferrer">
